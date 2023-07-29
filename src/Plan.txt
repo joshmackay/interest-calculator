@@ -1,0 +1,24 @@
+table shoudl show 'no data to show' until something is entered
+
+user enters data
+
+user clicks calculate (or reset)
+
+data will be received by the form component
+
+click will call function to store the users input data into object
+
+object to be passed up to App()
+
+object then passed down to Table component
+
+object data then needs to be processed to find values as per the table headers
+
+1.  We need to loop through the data n times based on how many years
+2.  Invested capital should include base current savings and yearly savings each year
+3.Total interest is cumulative interest per year
+4.interest (year) on first year is just from current savings
+5. every subsequent year is based on prior years total savings
+6. total savings is that years interest and invested capital
+
+data from each year needs to be sent down to a new table row component

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* --- 01 TYPOGRAPHY SYSTEM ---
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  /* always do this!!!!! */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #242a28; */
+  background: radial-gradient(#303b37, #1a1f1d);
+  color: #e1eeeb;
+}
+
+header {
+  text-align: center;
+  margin: 4.8rem auto;
+  margin-top: 4.8rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.logo {
+  height: 7.4rem;
+}
+
+form {
+  margin: 3.2rem auto;
+  max-width: 48rem;
+  background: linear-gradient(180deg, #307e6c, #2b996d);
+  padding: 1.6rem;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.4rem;
+}
+
+.form-input {
+  margin: 1.6rem 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  background: transparent;
+  border: 1px solid #76c0ae;
+  color: #c2e9e0;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  margin: 2.4rem 0;
+}
+
+.button,
+.button:link,
+.button:visited {
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  color: #c2e9e0;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #1f584b;
+  transition: all 0.4s;
+}
+
+.button:hover,
+.button:active {
+  background: #113c32;
+}
+
+.reset-button,
+.reset-button:hover,
+.reset-button:active {
+  background: transparent;
+  color: #91e1d0;
+}
+
+.result {
+  max-width: 80rem;
+  margin: 4.8rem auto;
+  padding: 1.6rem;
+  table-layout: fixed;
+  border-spacing: 3rem 2rem;
+  text-align: right;
+}
+
+.no-data {
+  font-size: 2rem;
+  color: #c2e9e0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+
+.result thead {
+  font-size: 1.2rem;
+  color: #83e6c0;
+}
+
+.result tbody {
+  color: #c2e9e0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
+}
+
+.results tr {
+  margin-top: 1rem;
+}
